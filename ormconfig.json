@@ -2,9 +2,19 @@
   {
     "name": "production",
     "type": "postgres",
-    "synchronize": false,
-    "dropSchema": false,
-    "logging": true
+    "host": "35.224.43.63",
+    "port": 5432,
+    "extra": {
+      "socketPath": "/cloudsql/jrm-todo-app:us-central1:todo-app"
+    },
+    "username": "postgres",
+    "password": "password123",
+    "database": "todo_db",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+      "dist/**/*.entity.js"
+    ]
   },
   {
     "name": "development",

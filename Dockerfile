@@ -2,7 +2,8 @@ FROM node:12.18.1 as build-deps
 WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
-RUN npm ci --ignore-scripts && \
+RUN rm -rf node_modules
+RUN npm i && \
   chown -Rh node:node /usr/src/app/node_modules
 
 COPY . ./
