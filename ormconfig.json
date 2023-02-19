@@ -7,7 +7,7 @@
     "extra": {
       "socketPath": "/cloudsql/jrm-todo-app:us-central1:todo-app"
     },
-    "username": "postgres",
+    "username": "todo-app",
     "password": "password123",
     "database": "todo_db",
     "synchronize": true,
