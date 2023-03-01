@@ -8,7 +8,7 @@ RUN npm i && \
 
 COPY . ./
 
-RUN npm run run:services
+# RUN npm run run:services
 
 RUN npm run build
 
